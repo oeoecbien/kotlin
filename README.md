@@ -1,31 +1,31 @@
 # Kotlin Apps
 
-Bienvenue dans mon dépôt de projets Kotlin ! Ici, vous trouverez une collection de mes projets de développement, chacun avec son propre dépôt Git. Ce répertoire contient divers projets Android que j'ai développés, chacun avec ses propres technologies et fonctionnalités spécifiques.
+Welcome to my Kotlin projects repository! Here you will find a collection of my development projects, each with its own Git repository. This directory contains various Android projects I have developed, each with its own specific technologies and features.
 
-## Projets inclus
+## Included Projects
 
 1. **DiceRoller**
 
-   - **Description** : Une application de lancer de dé interactive utilisant Jetpack Compose. L'application permet de lancer un dé à 6 faces et affiche le résultat visuellement avec des images correspondantes.
+   - **Description**: An interactive dice rolling application using Jetpack Compose. The application allows you to roll a 6-sided die and displays the result visually with corresponding images.
 
-   - **Technologies** : Kotlin, Jetpack Compose, Material Design 3
+   - **Technologies**: Kotlin, Jetpack Compose, Material Design 3
 
 2. **HappyBirthday**
 
-   - **Description** : Une application de carte d'anniversaire personnalisée utilisant Jetpack Compose. L'application affiche un message d'anniversaire avec une image de fond et permet de personnaliser le message et l'expéditeur.
+   - **Description**: A personalized birthday card application using Jetpack Compose. The application displays a birthday message with a background image and allows you to customize the message and sender.
 
-   - **Technologies** : Kotlin, Jetpack Compose, Material Design 3
+   - **Technologies**: Kotlin, Jetpack Compose, Material Design 3
 
 3. **Lemonade**
 
-   - **Description** : Une application interactive de fabrication de limonade utilisant Jetpack Compose. L'application simule le processus de fabrication de limonade avec différentes étapes : sélection du citron, pressage, consommation et redémarrage.
+   - **Description**: An interactive lemonade making application using Jetpack Compose. The application simulates the lemonade making process with different steps: lemon selection, squeezing, consumption, and restart.
 
-   - **Technologies** : Kotlin, Jetpack Compose, Material Design 3
+   - **Technologies**: Kotlin, Jetpack Compose, Material Design 3
 
-## Technologies utilisées
+## Technologies Used
 
-Chaque projet utilise différentes technologies, notamment :
+Each project uses various technologies, including:
 
-- **Langages** : Kotlin
-- **Frameworks** : Android SDK, Jetpack Compose
-- **Outils** : Git, GitHub, Android Studio, Gradle
+- **Languages**: Kotlin
+- **Frameworks**: Android SDK, Jetpack Compose
+- **Tools**: Git, GitHub, Android Studio, Gradle
