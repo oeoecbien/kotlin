@@ -22,6 +22,12 @@ Welcome to my Kotlin projects repository! Here you will find a collection of my 
 
    - **Technologies**: Kotlin, Jetpack Compose, Material Design 3
 
+4. **TipTime**
+
+   - **Description**: A tip calculation application using Jetpack Compose. The application allows you to calculate the tip amount based on the bill amount, teaching concepts of user input and state management in Compose.
+
+   - **Technologies**: Kotlin, Jetpack Compose, Material Design 3
+
 ## Technologies Used
 
 Each project uses various technologies, including:
