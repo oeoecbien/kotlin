@@ -77,13 +77,14 @@ An interactive clicker game that demonstrates Android lifecycle management and s
 - **Technologies**: Kotlin, Jetpack Compose, Material Design 3
 - **Min SDK**: 24 | **Target SDK**: 35 | **Compile SDK**: 35
 
-### 8. **Rotation App (Unscramble)**
+### 8. **Unscramble**
 
 A word game application that displays scrambled words for players to unscramble, demonstrating Android Architecture Components with ViewModel and StateFlow.
 
 - **Features**: Word unscrambling game, score tracking, skip word functionality, game over dialog, input validation with error feedback, keyboard actions handling
-- **Key Concepts**: ViewModel architecture component, StateFlow and MutableStateFlow for reactive state management, Data classes for UI state, AlertDialog composables, OutlinedTextField with validation, Keyboard actions (ImeAction), Edge-to-edge display, State management with coroutines Flow
-- **Technologies**: Kotlin, Jetpack Compose, Material Design 3, Android Architecture Components (ViewModel, StateFlow)
+- **Key Concepts**: ViewModel architecture component, StateFlow and MutableStateFlow for reactive state management, Data classes for UI state, AlertDialog composables, OutlinedTextField with validation, Keyboard actions (ImeAction), Edge-to-edge display, State management with coroutines Flow, Unit testing with JUnit
+- **Technologies**: Kotlin, Jetpack Compose, Material Design 3, Android Architecture Components (ViewModel, StateFlow), JUnit 4
+- **Testing**: Comprehensive unit tests for GameViewModel covering initialization, correct/incorrect guesses, word skipping, and game completion scenarios
 - **Min SDK**: 24 | **Target SDK**: 34 | **Compile SDK**: 34
 
 ## Technologies Used
@@ -103,6 +104,7 @@ A word game application that displays scrambled words for players to unscramble,
 - Compose UI, UI Graphics, UI Tooling
 - Material 3 Components
 - Kotlin Coroutines Flow
+- JUnit 4 (for unit testing)
 
 ### Development Tools
 - Android Studio
@@ -165,7 +167,7 @@ These projects are designed to progressively teach Jetpack Compose concepts:
 5. **Affirmations** - Learn lists, data classes, and lazy loading
 6. **Woof** - Explore Material Design 3 components, expandable cards, and animations
 7. **Dessert Clicker** - Discover Android lifecycle management, logging, and intent handling
-8. **Rotation App (Unscramble)** - Master Android Architecture Components with ViewModel and StateFlow for reactive state management
+8. **Unscramble** - Master Android Architecture Components with ViewModel and StateFlow for reactive state management, and learn unit testing with JUnit
 
 ## License
 
