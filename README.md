@@ -1,101 +1,135 @@
 # Kotlin Apps
 
-Welcome to my Kotlin projects repository! This directory contains a collection of Android applications developed using Kotlin and Jetpack Compose. Each project demonstrates different concepts and features of modern Android development with Material Design 3.
+Dépôt de projets Android développés avec Kotlin et Jetpack Compose. Chaque application démontre des concepts spécifiques du développement Android moderne avec Material Design 3.
 
-## Overview
+## Vue d'ensemble
 
-This repository includes eight Android applications, each focusing on different aspects of Jetpack Compose development:
-- State management
-- User interaction
-- UI layout and design
-- Material Design 3 components
-- Lists and data display
-- Architecture components (ViewModel, StateFlow)
+Ce dépôt comprend huit applications Android, organisées par catégories selon les concepts abordés :
+- **Bases** : Gestion d'état basique, layout et composition
+- **Gestion d'état** : États multi-étapes, saisie utilisateur et calculs
+- **Listes et données** : Affichage de listes, classes de données et chargement paresseux
+- **Architecture** : Cycle de vie Android, Architecture Components (ViewModel, StateFlow)
 
-## Included Projects
+## Structure du dépôt
 
-### 1. **DiceRoller**
+Les projets sont organisés dans les dossiers suivants :
 
-A simple and interactive dice rolling application that demonstrates basic state management in Jetpack Compose.
+```
+ktolin-apps/
+├── 01-basics/              # Projets de base
+│   ├── DiceRoller/
+│   └── HappyBirthday/
+├── 02-state-management/   # Gestion d'état avancée
+│   ├── Lemonade/
+│   └── TipTime/
+├── 03-lists-and-data/     # Listes et données
+│   ├── Affirmations/
+│   └── Woof/
+└── 04-architecture/       # Architecture Android
+    ├── Dessert Clicker/
+    └── Unscramble/
+```
 
-- **Features**: Roll a 6-sided die with visual feedback, random number generation
-- **Key Concepts**: State management with `remember` and `mutableStateOf`, Image composables, Button interactions
-- **Technologies**: Kotlin, Jetpack Compose, Material Design 3
-- **Min SDK**: 24 | **Target SDK**: 36 | **Compile SDK**: 36
+## Projets inclus
 
-### 2. **HappyBirthday**
+### 01-basics/ - Projets de base
 
-A personalized birthday card application showcasing image composition and text layout in Compose.
+#### DiceRoller
 
-- **Features**: Customizable birthday message, background image with overlay, text styling
-- **Key Concepts**: Image composables, Text styling, Layout composition (Box, Column), Content scaling
-- **Technologies**: Kotlin, Jetpack Compose, Material Design 3
-- **Min SDK**: 24 | **Target SDK**: 36 | **Compile SDK**: 36
+Application de lancer de dé interactive démontrant la gestion d'état basique dans Jetpack Compose.
 
-### 3. **Lemonade**
+- **Fonctionnalités** : Lancer un dé à 6 faces avec retour visuel, génération de nombres aléatoires
+- **Concepts clés** : Gestion d'état avec `remember` et `mutableStateOf`, composables Image, interactions de boutons
+- **Technologies** : Kotlin, Jetpack Compose, Material Design 3
+- **Min SDK** : 24 | **Target SDK** : 36 | **Compile SDK** : 36
+- **Emplacement** : `01-basics/DiceRoller/`
 
-An interactive lemonade-making simulation app that demonstrates multi-step state management and user interaction flows.
+#### HappyBirthday
 
-- **Features**: Step-by-step lemonade making process (select, squeeze, drink, restart), random squeeze count, visual feedback
-- **Key Concepts**: Multi-state management, Clickable composables, State transitions, Scaffold and TopAppBar
-- **Technologies**: Kotlin, Jetpack Compose, Material Design 3
-- **Min SDK**: 24 | **Target SDK**: 35 | **Compile SDK**: 35
+Application de carte d'anniversaire personnalisée illustrant la composition d'images et la mise en page de texte dans Compose.
 
-### 4. **TipTime**
+- **Fonctionnalités** : Message d'anniversaire personnalisable, image de fond avec superposition, style de texte
+- **Concepts clés** : Composables Image, style de texte, composition de layout (Box, Column), mise à l'échelle du contenu
+- **Technologies** : Kotlin, Jetpack Compose, Material Design 3
+- **Min SDK** : 24 | **Target SDK** : 36 | **Compile SDK** : 36
+- **Emplacement** : `01-basics/HappyBirthday/`
 
-A tip calculator application that teaches user input handling and real-time calculations in Compose.
+### 02-state-management/ - Gestion d'état avancée
 
-- **Features**: Bill amount input, customizable tip percentage, round-up option, real-time tip calculation, currency formatting
-- **Key Concepts**: TextField input handling, State management, Calculations, Number formatting, Switch component
-- **Technologies**: Kotlin, Jetpack Compose, Material Design 3
-- **Min SDK**: 24 | **Target SDK**: 35 | **Compile SDK**: 35
+#### Lemonade
 
-### 5. **Affirmations**
+Application de simulation de fabrication de limonade démontrant la gestion d'état multi-étapes et les flux d'interaction utilisateur.
 
-A scrollable list application that demonstrates data classes, lists, and lazy loading in Jetpack Compose.
+- **Fonctionnalités** : Processus de fabrication de limonade étape par étape (sélectionner, presser, boire, redémarrer), nombre de pressions aléatoire, retour visuel
+- **Concepts clés** : Gestion d'état multi-étapes, composables Clickable, transitions d'état, Scaffold et TopAppBar
+- **Technologies** : Kotlin, Jetpack Compose, Material Design 3
+- **Min SDK** : 24 | **Target SDK** : 35 | **Compile SDK** : 35
+- **Emplacement** : `02-state-management/Lemonade/`
 
-- **Features**: Scrollable list of 10 affirmation cards, each with an image and motivational text, smooth scrolling with LazyColumn
-- **Key Concepts**: LazyColumn composables, Card components, Data classes, Lists in Compose, Image composables, Resource management
-- **Technologies**: Kotlin, Jetpack Compose, Material Design 3
-- **Min SDK**: 24 | **Target SDK**: 33 | **Compile SDK**: 33
+#### TipTime
 
-### 6. **Woof**
+Application de calculateur de pourboire démontrant la gestion de la saisie utilisateur et les calculs en temps réel dans Compose.
 
-A beautiful dog gallery application showcasing Material Design 3 components with expandable cards and animations.
+- **Fonctionnalités** : Saisie du montant de la facture, pourcentage de pourboire personnalisable, option d'arrondi, calcul de pourboire en temps réel, formatage monétaire
+- **Concepts clés** : Gestion de la saisie TextField, gestion d'état, calculs, formatage de nombres, composant Switch
+- **Technologies** : Kotlin, Jetpack Compose, Material Design 3
+- **Min SDK** : 24 | **Target SDK** : 35 | **Compile SDK** : 35
+- **Emplacement** : `02-state-management/TipTime/`
 
-- **Features**: Scrollable list of dog cards with photos, names, ages, and favorite activities, expandable cards with smooth animations, Material 3 TopAppBar
-- **Key Concepts**: LazyColumn composables, Card components with expand/collapse functionality, Scaffold and CenterAlignedTopAppBar, Animations (animateContentSize), Data classes, Row and Column layouts, Material Icons
-- **Technologies**: Kotlin, Jetpack Compose, Material Design 3
-- **Min SDK**: 24 | **Target SDK**: 35 | **Compile SDK**: 35
+### 03-lists-and-data/ - Listes et données
 
-### 7. **Dessert Clicker**
+#### Affirmations
 
-An interactive clicker game that demonstrates Android lifecycle management and state persistence in Jetpack Compose.
+Application de liste défilante démontrant les classes de données, les listes et le chargement paresseux dans Jetpack Compose.
 
-- **Features**: Click-to-earn dessert game with progressive dessert unlocking, revenue tracking, share functionality via intents, visual feedback
-- **Key Concepts**: Android Activity lifecycle (onCreate, onStart, onResume, onPause, onStop, onDestroy), Logging with Logcat, State management with `rememberSaveable`, Intent handling (ACTION_SEND), Scaffold and TopAppBar, Data classes and progression logic
-- **Technologies**: Kotlin, Jetpack Compose, Material Design 3
-- **Min SDK**: 24 | **Target SDK**: 35 | **Compile SDK**: 35
+- **Fonctionnalités** : Liste défilante de 10 cartes d'affirmations, chacune avec une image et un texte motivationnel, défilement fluide avec LazyColumn
+- **Concepts clés** : Composables LazyColumn, composants Card, classes de données, listes dans Compose, composables Image, gestion des ressources
+- **Technologies** : Kotlin, Jetpack Compose, Material Design 3
+- **Min SDK** : 24 | **Target SDK** : 33 | **Compile SDK** : 33
+- **Emplacement** : `03-lists-and-data/Affirmations/`
 
-### 8. **Unscramble**
+#### Woof
 
-A word game application that displays scrambled words for players to unscramble, demonstrating Android Architecture Components with ViewModel and StateFlow.
+Application de galerie de chiens mettant en valeur les composants Material Design 3 avec des cartes extensibles et des animations.
 
-- **Features**: Word unscrambling game, score tracking, skip word functionality, game over dialog, input validation with error feedback, keyboard actions handling
-- **Key Concepts**: ViewModel architecture component, StateFlow and MutableStateFlow for reactive state management, Data classes for UI state, AlertDialog composables, OutlinedTextField with validation, Keyboard actions (ImeAction), Edge-to-edge display, State management with coroutines Flow, Unit testing with JUnit
-- **Technologies**: Kotlin, Jetpack Compose, Material Design 3, Android Architecture Components (ViewModel, StateFlow), JUnit 4
-- **Testing**: Comprehensive unit tests for GameViewModel covering initialization, correct/incorrect guesses, word skipping, and game completion scenarios
-- **Min SDK**: 24 | **Target SDK**: 34 | **Compile SDK**: 34
+- **Fonctionnalités** : Liste défilante de cartes de chiens avec photos, noms, âges et activités favorites, cartes extensibles avec animations fluides, TopAppBar Material 3
+- **Concepts clés** : Composables LazyColumn, composants Card avec fonctionnalité d'expansion/réduction, Scaffold et CenterAlignedTopAppBar, animations (animateContentSize), classes de données, layouts Row et Column, icônes Material
+- **Technologies** : Kotlin, Jetpack Compose, Material Design 3
+- **Min SDK** : 24 | **Target SDK** : 35 | **Compile SDK** : 35
+- **Emplacement** : `03-lists-and-data/Woof/`
 
-## Technologies Used
+### 04-architecture/ - Architecture Android
 
-### Core Technologies
-- **Language**: Kotlin
-- **UI Framework**: Jetpack Compose
-- **Design System**: Material Design 3
-- **Build System**: Gradle (Kotlin DSL)
+#### Dessert Clicker
 
-### Libraries & Dependencies
+Jeu interactif de clic démontrant la gestion du cycle de vie Android et la persistance d'état dans Jetpack Compose.
+
+- **Fonctionnalités** : Jeu de clic pour gagner des desserts avec déverrouillage progressif, suivi des revenus, fonctionnalité de partage via intents, retour visuel
+- **Concepts clés** : Cycle de vie de l'Activity Android (onCreate, onStart, onResume, onPause, onStop, onDestroy), journalisation avec Logcat, gestion d'état avec `rememberSaveable`, gestion des intents (ACTION_SEND), Scaffold et TopAppBar, classes de données et logique de progression
+- **Technologies** : Kotlin, Jetpack Compose, Material Design 3
+- **Min SDK** : 24 | **Target SDK** : 35 | **Compile SDK** : 35
+- **Emplacement** : `04-architecture/Dessert Clicker/`
+
+#### Unscramble
+
+Application de jeu de mots affichant des mots mélangés à déchiffrer, démontrant les Architecture Components Android avec ViewModel et StateFlow.
+
+- **Fonctionnalités** : Jeu de déchiffrement de mots, suivi du score, fonctionnalité de saut de mot, dialogue de fin de partie, validation de saisie avec retour d'erreur, gestion des actions du clavier
+- **Concepts clés** : Composant d'architecture ViewModel, StateFlow et MutableStateFlow pour la gestion d'état réactive, classes de données pour l'état de l'UI, composables AlertDialog, OutlinedTextField avec validation, actions du clavier (ImeAction), affichage edge-to-edge, gestion d'état avec coroutines Flow, tests unitaires avec JUnit
+- **Technologies** : Kotlin, Jetpack Compose, Material Design 3, Android Architecture Components (ViewModel, StateFlow), JUnit 4
+- **Tests** : Tests unitaires complets pour GameViewModel couvrant l'initialisation, les suppositions correctes/incorrectes, le saut de mots et les scénarios de fin de partie
+- **Min SDK** : 24 | **Target SDK** : 34 | **Compile SDK** : 34
+- **Emplacement** : `04-architecture/Unscramble/`
+
+## Technologies utilisées
+
+### Technologies principales
+- **Langage** : Kotlin
+- **Framework UI** : Jetpack Compose
+- **Système de design** : Material Design 3
+- **Système de build** : Gradle (Kotlin DSL)
+
+### Bibliothèques et dépendances
 - AndroidX Core KTX
 - AndroidX Lifecycle Runtime KTX
 - AndroidX Activity Compose
@@ -104,40 +138,59 @@ A word game application that displays scrambled words for players to unscramble,
 - Compose UI, UI Graphics, UI Tooling
 - Material 3 Components
 - Kotlin Coroutines Flow
-- JUnit 4 (for unit testing)
+- JUnit 4 (pour les tests unitaires)
 
-### Development Tools
+### Outils de développement
 - Android Studio
 - Gradle
 - Git
 
-## Getting Started
+## Démarrage
 
-### Prerequisites
-- Android Studio (latest version recommended)
-- JDK 11 or higher
-- Android SDK (API level 24+)
-- Basic knowledge of Kotlin syntax
-- Understanding of Android development fundamentals
+### Prérequis
+- Android Studio (dernière version recommandée)
+- JDK 11 ou supérieur
+- Android SDK (niveau API 24+)
+- Connaissances de base de la syntaxe Kotlin
+- Compréhension des fondamentaux du développement Android
 
 ### Installation
 
-1. Clone this repository:
+1. Cloner ce dépôt :
 ```bash
 git clone <repository-url>
-cd kotlin-apps
+cd ktolin-apps
 ```
 
-2. Open any project in Android Studio:
-   - File → Open → Select the project folder (e.g., `DiceRoller`, `HappyBirthday`, etc.)
+2. Ouvrir un projet dans Android Studio :
+   - File → Open → Sélectionner le dossier du projet (par exemple, `01-basics/DiceRoller`, `02-state-management/Lemonade`, etc.)
 
-3. Sync Gradle dependencies
+3. Synchroniser les dépendances Gradle
 
-4. Run the app on an emulator or physical device
+4. Exécuter l'application sur un émulateur ou un appareil physique
 
-## Project Structure
+## Structure du dépôt
 
-Each project follows a standard Android project structure:
+Le dépôt est organisé en catégories pour faciliter la navigation :
+
+```
+ktolin-apps/
+├── 01-basics/              # Concepts de base
+│   ├── DiceRoller/         # Gestion d'état basique
+│   └── HappyBirthday/      # Layout et composition
+├── 02-state-management/    # Gestion d'état avancée
+│   ├── Lemonade/           # États multi-étapes
+│   └── TipTime/            # Saisie utilisateur et calculs
+├── 03-lists-and-data/      # Listes et données
+│   ├── Affirmations/       # Listes simples
+│   └── Woof/               # Cartes extensibles et animations
+├── 04-architecture/        # Architecture Android
+│   ├── Dessert Clicker/    # Cycle de vie Android
+│   └── Unscramble/         # ViewModel et StateFlow
+└── README.md
+```
+
+Chaque projet suit une structure Android standard :
 ```
 ProjectName/
 ├── app/
@@ -156,23 +209,30 @@ ProjectName/
 └── settings.gradle.kts
 ```
 
-## Learning Path
+## Parcours d'apprentissage
 
-These projects are designed to progressively teach Jetpack Compose concepts:
+Ces projets sont conçus pour enseigner progressivement les concepts de Jetpack Compose :
 
-1. **DiceRoller** - Start here for basic state and UI
-2. **HappyBirthday** - Learn layout and image composition
-3. **Lemonade** - Understand multi-step state management
-4. **TipTime** - Master user input and calculations
-5. **Affirmations** - Learn lists, data classes, and lazy loading
-6. **Woof** - Explore Material Design 3 components, expandable cards, and animations
-7. **Dessert Clicker** - Discover Android lifecycle management, logging, and intent handling
-8. **Unscramble** - Master Android Architecture Components with ViewModel and StateFlow for reactive state management, and learn unit testing with JUnit
+### Niveau 1 : Bases (`01-basics/`)
+1. **DiceRoller** - Gestion d'état basique et interface utilisateur
+2. **HappyBirthday** - Layout et composition d'images
 
-## License
+### Niveau 2 : Gestion d'état (`02-state-management/`)
+3. **Lemonade** - Gestion d'état multi-étapes
+4. **TipTime** - Saisie utilisateur et calculs
 
-Each project may have its own license. Please refer to individual project README files for license information.
+### Niveau 3 : Listes et données (`03-lists-and-data/`)
+5. **Affirmations** - Listes, classes de données et chargement paresseux
+6. **Woof** - Composants Material Design 3, cartes extensibles et animations
 
-## Contributing
+### Niveau 4 : Architecture (`04-architecture/`)
+7. **Dessert Clicker** - Gestion du cycle de vie Android, journalisation et gestion des intents
+8. **Unscramble** - Architecture Components Android avec ViewModel et StateFlow pour la gestion d'état réactive, et tests unitaires avec JUnit
 
-Feel free to explore, learn, and experiment with these projects. Each project is self-contained and can be run independently.
+## Licence
+
+Chaque projet peut avoir sa propre licence. Consultez les fichiers README individuels de chaque projet pour les informations de licence.
+
+## Contribution
+
+Chaque projet est autonome et peut être exécuté indépendamment. Les contributions sont les bienvenues.
