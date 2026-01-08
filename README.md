@@ -4,7 +4,7 @@ Welcome to my Kotlin projects repository! This directory contains a collection o
 
 ## Overview
 
-This repository includes six Android applications, each focusing on different aspects of Jetpack Compose development:
+This repository includes seven Android applications, each focusing on different aspects of Jetpack Compose development:
 - State management
 - User interaction
 - UI layout and design
@@ -64,6 +64,15 @@ A beautiful dog gallery application showcasing Material Design 3 components with
 
 - **Features**: Scrollable list of dog cards with photos, names, ages, and favorite activities, expandable cards with smooth animations, Material 3 TopAppBar
 - **Key Concepts**: LazyColumn composables, Card components with expand/collapse functionality, Scaffold and CenterAlignedTopAppBar, Animations (animateContentSize), Data classes, Row and Column layouts, Material Icons
+- **Technologies**: Kotlin, Jetpack Compose, Material Design 3
+- **Min SDK**: 24 | **Target SDK**: 35 | **Compile SDK**: 35
+
+### 7. **Dessert Clicker**
+
+An interactive clicker game that demonstrates Android lifecycle management and state persistence in Jetpack Compose.
+
+- **Features**: Click-to-earn dessert game with progressive dessert unlocking, revenue tracking, share functionality via intents, visual feedback
+- **Key Concepts**: Android Activity lifecycle (onCreate, onStart, onResume, onPause, onStop, onDestroy), Logging with Logcat, State management with `rememberSaveable`, Intent handling (ACTION_SEND), Scaffold and TopAppBar, Data classes and progression logic
 - **Technologies**: Kotlin, Jetpack Compose, Material Design 3
 - **Min SDK**: 24 | **Target SDK**: 35 | **Compile SDK**: 35
 
@@ -143,6 +152,7 @@ These projects are designed to progressively teach Jetpack Compose concepts:
 4. **TipTime** - Master user input and calculations
 5. **Affirmations** - Learn lists, data classes, and lazy loading
 6. **Woof** - Explore Material Design 3 components, expandable cards, and animations
+7. **Dessert Clicker** - Discover Android lifecycle management, logging, and intent handling
 
 ## License
 
