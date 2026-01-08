@@ -4,12 +4,13 @@ Welcome to my Kotlin projects repository! This directory contains a collection o
 
 ## Overview
 
-This repository includes seven Android applications, each focusing on different aspects of Jetpack Compose development:
+This repository includes eight Android applications, each focusing on different aspects of Jetpack Compose development:
 - State management
 - User interaction
 - UI layout and design
 - Material Design 3 components
 - Lists and data display
+- Architecture components (ViewModel, StateFlow)
 
 ## Included Projects
 
@@ -76,6 +77,15 @@ An interactive clicker game that demonstrates Android lifecycle management and s
 - **Technologies**: Kotlin, Jetpack Compose, Material Design 3
 - **Min SDK**: 24 | **Target SDK**: 35 | **Compile SDK**: 35
 
+### 8. **Rotation App (Unscramble)**
+
+A word game application that displays scrambled words for players to unscramble, demonstrating Android Architecture Components with ViewModel and StateFlow.
+
+- **Features**: Word unscrambling game, score tracking, skip word functionality, game over dialog, input validation with error feedback, keyboard actions handling
+- **Key Concepts**: ViewModel architecture component, StateFlow and MutableStateFlow for reactive state management, Data classes for UI state, AlertDialog composables, OutlinedTextField with validation, Keyboard actions (ImeAction), Edge-to-edge display, State management with coroutines Flow
+- **Technologies**: Kotlin, Jetpack Compose, Material Design 3, Android Architecture Components (ViewModel, StateFlow)
+- **Min SDK**: 24 | **Target SDK**: 34 | **Compile SDK**: 34
+
 ## Technologies Used
 
 ### Core Technologies
@@ -88,9 +98,11 @@ An interactive clicker game that demonstrates Android lifecycle management and s
 - AndroidX Core KTX
 - AndroidX Lifecycle Runtime KTX
 - AndroidX Activity Compose
+- AndroidX Lifecycle ViewModel Compose
 - Jetpack Compose BOM
 - Compose UI, UI Graphics, UI Tooling
 - Material 3 Components
+- Kotlin Coroutines Flow
 
 ### Development Tools
 - Android Studio
@@ -153,6 +165,7 @@ These projects are designed to progressively teach Jetpack Compose concepts:
 5. **Affirmations** - Learn lists, data classes, and lazy loading
 6. **Woof** - Explore Material Design 3 components, expandable cards, and animations
 7. **Dessert Clicker** - Discover Android lifecycle management, logging, and intent handling
+8. **Rotation App (Unscramble)** - Master Android Architecture Components with ViewModel and StateFlow for reactive state management
 
 ## License
 
