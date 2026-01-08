@@ -4,11 +4,12 @@ Dépôt de projets Android développés avec Kotlin et Jetpack Compose. Chaque a
 
 ## Vue d'ensemble
 
-Ce dépôt comprend huit applications Android, organisées par catégories selon les concepts abordés :
+Ce dépôt comprend neuf applications Android, organisées par catégories selon les concepts abordés :
 - **Bases** : Gestion d'état basique, layout et composition
 - **Gestion d'état** : États multi-étapes, saisie utilisateur et calculs
 - **Listes et données** : Affichage de listes, classes de données et chargement paresseux
 - **Architecture** : Cycle de vie Android, Architecture Components (ViewModel, StateFlow)
+- **Coroutines** : Programmation asynchrone avec Kotlin Coroutines
 
 ## Structure du dépôt
 
@@ -25,9 +26,11 @@ ktolin-apps/
 ├── 03-lists-and-data/     # Listes et données
 │   ├── Affirmations/
 │   └── Woof/
-└── 04-architecture/       # Architecture Android
-    ├── Dessert Clicker/
-    └── Unscramble/
+├── 04-architecture/       # Architecture Android
+│   ├── Dessert Clicker/
+│   └── Unscramble/
+└── 05-coroutines/         # Coroutines Kotlin
+    └── Race Tracker/
 ```
 
 ## Projets inclus
@@ -121,6 +124,19 @@ Application de jeu de mots affichant des mots mélangés à déchiffrer, démont
 - **Min SDK** : 24 | **Target SDK** : 34 | **Compile SDK** : 34
 - **Emplacement** : `04-architecture/Unscramble/`
 
+### 05-coroutines/ - Coroutines Kotlin
+
+#### Race Tracker
+
+Application de simulation de course démontrant les concepts fondamentaux des coroutines Kotlin pour la programmation asynchrone dans Jetpack Compose.
+
+- **Fonctionnalités** : Simulation de course entre deux joueurs avec progression en temps réel, contrôles de démarrage/pause/réinitialisation, indicateurs de progression visuels, mise à jour asynchrone de l'état
+- **Concepts clés** : Coroutines Kotlin (`suspend`, `delay`, `coroutineScope`, `launch`), fonctions suspendues, exécution concurrente de tâches, `LaunchedEffect` pour déclencher des coroutines depuis Compose, gestion d'état avec `mutableStateOf`, composables LinearProgressIndicator
+- **Technologies** : Kotlin, Jetpack Compose, Material Design 3, Kotlin Coroutines
+- **Tests** : Tests unitaires pour RaceParticipant avec kotlinx-coroutines-test
+- **Min SDK** : 24 | **Target SDK** : 35 | **Compile SDK** : 35
+- **Emplacement** : `05-coroutines/Race Tracker/`
+
 ## Technologies utilisées
 
 ### Technologies principales
@@ -163,7 +179,7 @@ cd ktolin-apps
 ```
 
 2. Ouvrir un projet dans Android Studio :
-   - File → Open → Sélectionner le dossier du projet (par exemple, `01-basics/DiceRoller`, `02-state-management/Lemonade`, etc.)
+   - File → Open → Sélectionner le dossier du projet (par exemple, `01-basics/DiceRoller`, `02-state-management/Lemonade`, `05-coroutines/Race Tracker`, etc.)
 
 3. Synchroniser les dépendances Gradle
 
@@ -187,6 +203,8 @@ ktolin-apps/
 ├── 04-architecture/        # Architecture Android
 │   ├── Dessert Clicker/    # Cycle de vie Android
 │   └── Unscramble/         # ViewModel et StateFlow
+├── 05-coroutines/          # Coroutines Kotlin
+│   └── Race Tracker/       # Programmation asynchrone
 └── README.md
 ```
 
@@ -228,6 +246,9 @@ Ces projets sont conçus pour enseigner progressivement les concepts de Jetpack 
 ### Niveau 4 : Architecture (`04-architecture/`)
 7. **Dessert Clicker** - Gestion du cycle de vie Android, journalisation et gestion des intents
 8. **Unscramble** - Architecture Components Android avec ViewModel et StateFlow pour la gestion d'état réactive, et tests unitaires avec JUnit
+
+### Niveau 5 : Coroutines (`05-coroutines/`)
+9. **Race Tracker** - Programmation asynchrone avec Kotlin Coroutines, exécution concurrente de tâches, fonctions suspendues et intégration avec Jetpack Compose
 
 ## Licence
 
