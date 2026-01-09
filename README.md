@@ -4,12 +4,13 @@ Dépôt de projets Android développés avec Kotlin et Jetpack Compose. Chaque a
 
 ## Vue d'ensemble
 
-Ce dépôt comprend neuf applications Android, organisées par catégories selon les concepts abordés :
+Ce dépôt comprend dix applications Android, organisées par catégories selon les concepts abordés :
 - **Bases** : Gestion d'état basique, layout et composition
 - **Gestion d'état** : États multi-étapes, saisie utilisateur et calculs
 - **Listes et données** : Affichage de listes, classes de données et chargement paresseux
 - **Architecture** : Cycle de vie Android, Architecture Components (ViewModel, StateFlow)
 - **Coroutines** : Programmation asynchrone avec Kotlin Coroutines
+- **Réseau** : Appels réseau REST, sérialisation JSON et chargement d'images depuis Internet
 
 ## Structure du dépôt
 
@@ -29,8 +30,10 @@ ktolin-apps/
 ├── 04-architecture/       # Architecture Android
 │   ├── Dessert Clicker/
 │   └── Unscramble/
-└── 05-coroutines/         # Coroutines Kotlin
-    └── Race Tracker/
+├── 05-coroutines/         # Coroutines Kotlin
+│   └── Race Tracker/
+└── 06-network/            # Réseau et API
+    └── Mars Photos/
 ```
 
 ## Projets inclus
@@ -137,6 +140,18 @@ Application de simulation de course démontrant les concepts fondamentaux des co
 - **Min SDK** : 24 | **Target SDK** : 35 | **Compile SDK** : 35
 - **Emplacement** : `05-coroutines/Race Tracker/`
 
+### 06-network/ - Réseau et API
+
+#### Mars Photos
+
+Application de galerie de photos de Mars démontrant l'intégration d'API REST, la sérialisation JSON et le chargement d'images depuis Internet dans Jetpack Compose.
+
+- **Fonctionnalités** : Affichage de photos réelles de la surface de Mars capturées par les rovers de la NASA, récupération de données depuis un service web REST, chargement d'images par URL, gestion des états de chargement et d'erreur, grille défilante avec LazyVerticalGrid
+- **Concepts clés** : Appels réseau REST avec Retrofit, sérialisation/désérialisation JSON avec kotlinx.serialization, chargement d'images avec Coil, architecture Repository, ViewModel avec coroutines, gestion d'état UI (Loading, Success, Error), composables LazyVerticalGrid, gestion des erreurs réseau (IOException, HttpException), affichage edge-to-edge
+- **Technologies** : Kotlin, Jetpack Compose, Material Design 3, Retrofit, kotlinx.serialization, Coil, OkHttp, Android Architecture Components (ViewModel)
+- **Min SDK** : 24 | **Target SDK** : 34 | **Compile SDK** : 34
+- **Emplacement** : `06-network/Mars Photos/`
+
 ## Technologies utilisées
 
 ### Technologies principales
@@ -154,6 +169,10 @@ Application de simulation de course démontrant les concepts fondamentaux des co
 - Compose UI, UI Graphics, UI Tooling
 - Material 3 Components
 - Kotlin Coroutines Flow
+- Retrofit (pour les appels réseau REST)
+- kotlinx.serialization (pour la sérialisation JSON)
+- Coil (pour le chargement d'images)
+- OkHttp (client HTTP)
 - JUnit 4 (pour les tests unitaires)
 
 ### Outils de développement
@@ -179,7 +198,7 @@ cd ktolin-apps
 ```
 
 2. Ouvrir un projet dans Android Studio :
-   - File → Open → Sélectionner le dossier du projet (par exemple, `01-basics/DiceRoller`, `02-state-management/Lemonade`, `05-coroutines/Race Tracker`, etc.)
+   - File → Open → Sélectionner le dossier du projet (par exemple, `01-basics/DiceRoller`, `02-state-management/Lemonade`, `05-coroutines/Race Tracker`, `06-network/Mars Photos`, etc.)
 
 3. Synchroniser les dépendances Gradle
 
@@ -205,6 +224,8 @@ ktolin-apps/
 │   └── Unscramble/         # ViewModel et StateFlow
 ├── 05-coroutines/          # Coroutines Kotlin
 │   └── Race Tracker/       # Programmation asynchrone
+├── 06-network/             # Réseau et API
+│   └── Mars Photos/        # Appels réseau REST et chargement d'images
 └── README.md
 ```
 
@@ -249,6 +270,9 @@ Ces projets sont conçus pour enseigner progressivement les concepts de Jetpack 
 
 ### Niveau 5 : Coroutines (`05-coroutines/`)
 9. **Race Tracker** - Programmation asynchrone avec Kotlin Coroutines, exécution concurrente de tâches, fonctions suspendues et intégration avec Jetpack Compose
+
+### Niveau 6 : Réseau (`06-network/`)
+10. **Mars Photos** - Appels réseau REST avec Retrofit, sérialisation JSON avec kotlinx.serialization, chargement d'images avec Coil, architecture Repository et ViewModel avec coroutines
 
 ## Licence
 
