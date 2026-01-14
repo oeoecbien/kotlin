@@ -18,6 +18,10 @@ Les projets sont organisés dans les dossiers suivants :
 
 ```
 ktolin-apps/
+├── 00-works/              # Ressources pédagogiques et révision
+│   ├── Kotlin-Android.md  # Cours de révision complet pour QCM
+│   ├── lessons/           # Supports de cours (PDF)
+│   └── quizz/             # Quiz de révision (PDF)
 ├── 01-basics/              # Projets de base
 │   ├── DiceRoller/
 │   └── HappyBirthday/
@@ -35,6 +39,55 @@ ktolin-apps/
 └── 06-network/            # Réseau et API
     └── Mars Photos/
 ```
+
+## Ressources pédagogiques
+
+### 00-works/ - Révision et supports de cours
+
+Ce dossier contient toutes les ressources pédagogiques pour réviser et préparer les examens :
+
+#### Kotlin-Android.md
+
+Cours de révision complet et concis pour QCM couvrant tous les concepts du développement Android avec Kotlin et Jetpack Compose.
+
+**Contenu :**
+- **Bases de Kotlin** : Opérateurs, types de données, nullabilité, fonctions, classes et objets
+- **Première application Android** : Structure de projet, Activity, cycle de vie, Jetpack Compose
+- **Gestion d'état** : `remember`, `mutableStateOf`, `rememberSaveable`
+- **Listes et données** : Data classes, `LazyColumn`, composants Material
+- **Architecture** : ViewModel, StateFlow, cycle de vie Android
+- **Coroutines** : Fonctions suspendues, `launch`, `LaunchedEffect`, exécution concurrente
+- **Réseau** : Retrofit, sérialisation JSON, Coil, gestion d'erreurs
+- **Points clés pour QCM** : Résumé des concepts essentiels
+- **Formulaire rapide** : Syntaxe essentielle avec exemples
+
+**Format :** Chaque concept est accompagné d'exemples courts et concrets pour faciliter la compréhension et la mémorisation.
+
+**Emplacement :** `00-works/Kotlin-Android.md`
+
+#### lessons/
+
+Contient les supports de cours originaux au format PDF :
+- Introduction au développement Android
+- Bases de Kotlin (opérateurs, fonctions, classes)
+- Création d'applications Android
+- Interfaces avancées avec Compose
+- Architecture Android
+- Accès Internet et coroutines
+- Persistance de données
+
+**Emplacement :** `00-works/lessons/`
+
+#### quizz/
+
+Contient les quiz de révision au format PDF pour chaque module :
+- Quiz sur les bases de Kotlin
+- Quiz sur la première application Android
+- Quiz sur les interfaces avancées
+- Quiz sur l'architecture Android
+- Quiz sur l'accès Internet et le chargement d'images
+
+**Emplacement :** `00-works/quizz/`
 
 ## Projets inclus
 
@@ -210,6 +263,10 @@ Le dépôt est organisé en catégories pour faciliter la navigation :
 
 ```
 ktolin-apps/
+├── 00-works/               # Ressources pédagogiques
+│   ├── Kotlin-Android.md   # Cours de révision pour QCM
+│   ├── lessons/            # Supports de cours (PDF)
+│   └── quizz/              # Quiz de révision (PDF)
 ├── 01-basics/              # Concepts de base
 │   ├── DiceRoller/         # Gestion d'état basique
 │   └── HappyBirthday/      # Layout et composition
@@ -249,6 +306,12 @@ ProjectName/
 ```
 
 ## Parcours d'apprentissage
+
+### Révision et préparation aux examens
+
+Avant de commencer les projets pratiques, consultez le cours de révision dans `00-works/Kotlin-Android.md` pour une vue d'ensemble complète de tous les concepts, avec des exemples concrets et un format optimisé pour la révision de QCM.
+
+### Projets pratiques
 
 Ces projets sont conçus pour enseigner progressivement les concepts de Jetpack Compose :
 
